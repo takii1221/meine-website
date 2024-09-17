@@ -1,24 +1,4 @@
-// Toggle Navigation Menu for Mobile
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
-
-// Form submission handler (Example: can be extended to send form data)
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    // Here, you can handle the form data or send it via AJAX.
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Simulate form submission for now
-    alert(`Danke für deine Nachricht, ${name}! Wir werden uns unter ${email} bei dir melden.`);
-    
-    // Optionally, clear the form
-    contactForm.reset();
+    alert('Thank you for your message!');
 });
